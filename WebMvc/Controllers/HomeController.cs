@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using WebMvc.Models;
+using WebMvc.Models.ViewModels;
 
 namespace WebMvc.Controllers;
 
@@ -15,7 +15,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewData["teste2"] = "RENATO";
         return View();
+        
     }
 
     public IActionResult Privacy()
